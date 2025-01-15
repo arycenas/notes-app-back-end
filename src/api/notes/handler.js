@@ -41,9 +41,7 @@ class NotesHandler {
     const note = await this.service.getNoteById(id);
     return {
       status: 'success',
-      data: {
-        note,
-      },
+      data: { note },
     };
   }
 
